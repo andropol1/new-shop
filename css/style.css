@@ -1,0 +1,254 @@
+:root {
+    --dark-blue: #222222;
+    --pink: #F1E4E6;
+    --dark-pink: #F16D7F;
+    --brown: #474040;
+    --light-grey: #F8F8F8;
+    --grey: #9F9F9F;
+    --dark-grey: #5D5D5D;
+    --pink: #F26376;
+    --pink-border: #FF6A6A;
+    --black: #222224;
+    --white: #FBFBFB;
+}
+
+body {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.container {
+    width: 1138px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.header {
+    background-color: var(--dark-blue);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 34px 0 0;
+}
+
+.header__logo {
+    margin: 0 10px 0 0;
+}
+
+.header__person-link {
+    margin: 0 34px 0 0;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__title-wrapper {
+    padding: 0 0 0 91px;
+    flex-grow: 1;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__subtitle-pink {
+    color: var(--dark-pink);
+}
+
+.offers {
+    margin-bottom: 97px;
+}
+
+.offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offers__item {
+    color: white;
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--brown);
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers__item--woman {
+    background-image: url(../img/woman.jpg);
+}
+
+.offers__item--man {
+    background-image: url(../img/men.jpg);
+}
+
+.offers__item--kids {
+    background-image: url(../img/kids.jpg);
+}
+
+.offers__item--accesories {
+    width: 100%;
+    margin: 0;
+    background-image: url(../img/accesories.jpg);
+    min-height: 180px;
+}
+
+.offers__list-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.offers__list-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 19px;
+}
+
+.products__item {
+    background-color: var(--light-grey);
+    margin: 0 0 30px;
+    width: 360px;
+    min-height: 581px;
+}
+
+.products__item-img {
+    min-height: 420px;
+}
+
+.products__list-heading {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 25px 194px 13px 18px;
+}
+
+.products__list-text {
+    width: 315px;
+    margin: 0 28px 18px 17px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--dark-grey);
+}
+
+.products__list-price {
+    margin: 0 290px 20px 18px;
+    color: var(--dark-pink);
+}
+
+.products__heading {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.products__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.products__button {
+    padding: 15px 39px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid var(--pink-border);
+    color: var(--dark-pink);
+    align-self: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+}
+
+.advantages {
+    background-color: var(--black);
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 341px;
+}
+
+.advantages__item {
+    align-items: center;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__item-heading {
+    color: var(--white);
+    margin: 25px 0 16px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.advantages__item-text {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+}
