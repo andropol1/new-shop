@@ -1,0 +1,114 @@
+.registration {
+    display: flex;
+    margin-bottom: 96px;
+
+    ::-webkit-input-placeholder {
+        color: $grey;
+    }
+    ::-moz-placeholder {
+        color: $grey;
+    } /* Firefox 19+ */
+    :-moz-placeholder {
+        color: $grey;
+    } /* Firefox 18- */
+    :-ms-input-placeholder {
+        color: $grey;
+    }
+
+    .registration__input {
+        display: block;
+        width: 360px;
+        height: 45px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+
+        &-password {
+            margin-bottom: 15px;
+        }
+    }
+
+    .registration__legend {
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .registration__radio {
+        margin-bottom: 33px;
+    }
+
+    .registration__text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grey;
+        width: 360px;
+        margin-bottom: 39px;
+    }
+
+    .registration__button {
+        position: relative;
+        width: 167px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $dark-pink;
+        color: $white;
+        outline: none;
+        border: 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding-right: 46px;
+        box-sizing: border-box;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 29px;
+            top: 20px;
+            background-image: url(../img/vector.svg);
+            background-size: 17px 10px;
+            width: 17px;
+            height: 10px;
+        }
+    }
+    .registration__loyalty {
+        padding-left: 130px;
+
+        &-heading {
+            margin-bottom: 22px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            margin-bottom: 21px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .registration__list {
+        padding-left: 40px;
+        position: relative;
+        margin-bottom: 16px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 16px;
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            background-image: url(../img/mark.svg);
+            background-size: 20px 16px;
+        }
+    }
+}
