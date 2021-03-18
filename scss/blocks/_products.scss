@@ -33,11 +33,16 @@
     .products__item {
         background-color: $light-grey;
         margin: 0 0 30px;
-        width: 360px;
+        width: 49%;
         min-height: 581px;
+
+        @include tablet {
+            margin: 0 0 16px;
+        }
 
         &-img {
             min-height: 420px;
+            width: 100%;
         }
     }
     

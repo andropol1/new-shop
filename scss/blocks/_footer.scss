@@ -8,6 +8,11 @@
         justify-content: space-around;
         min-height: 448px;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 60px 0 140px;
+        }
     }
     
     .footer__review {

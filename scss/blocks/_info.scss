@@ -12,5 +12,10 @@
         color: $white;
         padding-left: 60px;
     }
-}
 
+    .info__media {
+        @include tablet {
+            margin: 0 32px 0 0;
+        }
+    }
+}

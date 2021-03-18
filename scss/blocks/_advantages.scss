@@ -1,11 +1,20 @@
 .advantages {
     background-color: $black;
 
+    @include tablet {
+        padding: 48px 0 64px;
+    }
+        
+
     .advantages__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 341px;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     .advantages__item {
@@ -13,6 +22,16 @@
         width: 360px;
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            margin: 0 0 49px;
+        }
+
+        &-last {
+            @include tablet {
+                margin: 0;
+            }
+        }
 
         &-text {
             color: $white;
