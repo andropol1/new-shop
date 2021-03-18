@@ -1,0 +1,16 @@
+.info {
+    background-color: $black;
+
+    .info__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 79px;
+    }
+    
+    .info__text {
+        color: $white;
+        padding-left: 60px;
+    }
+}
+

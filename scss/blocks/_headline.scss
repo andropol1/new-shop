@@ -1,0 +1,13 @@
+.headline {
+    background-color: $pink;
+    height: 148px;
+    margin-bottom: 64px;
+
+    .headline__reg {
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $pink-border;
+        padding: 59px 0 0 0;
+    }
+}

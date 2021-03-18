@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -16,90 +15,93 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <div class="header__contorls">
-                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <div class="header__controls">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.svg" alt="logo" width="44" height="38">
+                    </a>
                     <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+
                 </div>
-                <div class="header__contorls">
+                <div class="header__controls">
                     <button type="button" class="header__button">
                         <img src="./img/menu.svg" alt="menu" width="32" height="23">
                     </button>
-                    <a class="header__person-link" href="#"><img src="./img/person.svg" alt="person" width="29"
+                    <a class="header__person-link" href="registration.html"><img src="./img/person.svg" alt="person" width="29"
                             height="29"></a>
-                    <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+                    <a href="cart.html"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+                    </dive>
                 </div>
             </div>
-        </div>
-        <nav class="header__navigation">
-            menu
-            <ul>
-                <li>
-                    <h2>man</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>woman</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>kids</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <nav class="header__navigation">
+                menu
+                <ul>
+                    <li>
+                        <h2>man</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>woman</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>kids</h2>
+                        <ul>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                            <li><a href="#">link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <main>
-        <section class="headline">
+        <section class="headline ">
             <div class="container">
-                <h1>registration</h1>
+                <h1 class="headline__reg">registration</h1>
             </div>
         </section>
-        <section class="registration">
+        <section class="registration container">
             <form action="" method="get">
                 <fieldset>
-                    <legend>Your Name</legend>
+                    <legend class="registration__legend">Your Name</legend>
                     <input class="registration__input" type="text" placeholder="First Name">
                     <input class="registration__input" type="text" placeholder="Last Name">
                 </fieldset>
-                <fieldset>
+                <fieldset class="registration__radio">
                     <input  type="radio" name="sex"> Male
                     <input type="radio" name="sex"> Female
                 </fieldset>
                 <fieldset>
-                    <legend>Login details</legend> 
+                    <legend class="registration__legend">Login details</legend> 
                     <input class="registration__input" type="email" placeholder="Email">
-                    <input class="registration__input" type="password" placeholder="Password">
+                    <input class="registration__input registration__input-password" type="password" placeholder="Password">
                 </fieldset>
-                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                <a href="">join now</a>
+                <p class="registration__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button type="submit" class="registration__button">join now</button>
             </form>
-            <div class="loyalty">
-                <h2>loyalty has its perks</h2>
-                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                <ul>
-                    <li>15% off welcome offer
+            <div class="registration__loyalty">
+                <h2 class="registration__loyalty-heading">loyalty has its perks</h2>
+                <p class="registration__loyalty-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul >
+                    <li class="registration__list" >15% off welcome offer
                     </li>
-                    <li>Free shipping, returns and exchanges on all orders
+                    <li class="registration__list">Free shipping, returns and exchanges on all orders
                     </li>
-                    <li>$10 off a purchase on your birthday
+                    <li class="registration__list">$10 off a purchase on your birthday
                     </li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
+                    <li class="registration__list">Early access to products</li>
+                    <li class="registration__list">Exclusive offers & rewards</li>
                 </ul>
             </div>
         </section>
@@ -110,13 +112,14 @@
             <div class="container">
                 <div class="footer__content">
                     <div class="footer__review">
-                        <img class="footer__review-img" src="./img/client.png" alt="client">
+                        <img src="./img/client.png" alt="client">
                         <p class="footer__review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
                             pulvinar
                             purus condimentum“</p>
                     </div>
                     <div class="footer__form">
-                        <p class="footer__form-text"> <span class="footer__subtitle">subscribe</span>
+                        <p class="footer__form-text"> 
+                            <span class="footer__form-subtitle">subscribe</span>
                             for our newletter and promotion</p>
                         <form class="footer__email" action="#" method="post">
                             <input type="email" class="footer__email-input" placeholder="Enter your Email">
