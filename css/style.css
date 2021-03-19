@@ -46,7 +46,7 @@ body {
 }
 
 .container {
-  width: 1138px;
+  width: 71%;
   margin: 0 auto;
 }
 
@@ -59,6 +59,12 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
 }
 
 .header {
@@ -91,6 +97,12 @@ body {
   margin: 0 40px 0 0;
 }
 
+@media (max-width: 768px) {
+  .header__logo {
+    margin: 0 40px 0 18px;
+  }
+}
+
 .header__person-link {
   margin: 0 34px 0 0;
 }
@@ -98,6 +110,24 @@ body {
 .brand {
   display: flex;
   margin: 0 0 63px;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    margin: 0 0 19px;
+  }
+}
+
+.brand .brand__img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .brand .brand__img {
+    width: 385px;
+    height: 370px;
+  }
 }
 
 .brand__title {
@@ -109,19 +139,28 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
 .brand__title::before {
   position: absolute;
   left: -28px;
-  content: '';
+  content: "";
   width: 12px;
   height: 100%;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
 }
 
 .brand__title-wrapper {
   padding: 0 0 0 91px;
   flex-grow: 1;
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
   display: flex;
   align-items: center;
 }
@@ -133,8 +172,17 @@ body {
   line-height: 44px;
 }
 
+@media (max-width: 768px) {
+  .brand__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
 .brand__subtitle-pink {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .offers {
@@ -148,14 +196,21 @@ body {
 }
 
 .offers .offers__item {
-  color: #FBFBFB;
-  width: 360px;
+  color: #fbfbfb;
+  width: 32%;
   min-height: 260px;
   background-color: #474040;
   margin: 0 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .offers .offers__item {
+    width: 32%;
+    min-height: 168px;
+  }
 }
 
 .offers .offers__item--woman {
@@ -187,7 +242,7 @@ body {
   font-weight: 700;
   line-height: 29px;
   text-align: center;
-  color: #F16D7F;
+  color: #f16d7f;
   text-transform: uppercase;
 }
 
@@ -217,23 +272,30 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 
 .products .products__list-price {
   margin: 0 290px 20px 18px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .products .products__item {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 0 0 30px;
-  width: 360px;
+  width: 49%;
   min-height: 581px;
+}
+
+@media (max-width: 768px) {
+  .products .products__item {
+    margin: 0 0 16px;
+  }
 }
 
 .products .products__item-img {
   min-height: 420px;
+  width: 100%;
 }
 
 .products .products__heading {
@@ -246,7 +308,7 @@ body {
 .products .products__text {
   font-size: 14px;
   line-height: 17px;
-  color: #9F9F9F;
+  color: #9f9f9f;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -256,13 +318,19 @@ body {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  border: 1px solid #FF6A6A;
-  color: #F16D7F;
+  border: 1px solid #ff6a6a;
+  color: #f16d7f;
   align-self: center;
 }
 
 .advantages {
   background-color: #222224;
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    padding: 48px 0 64px;
+  }
 }
 
 .advantages .advantages__list {
@@ -272,6 +340,12 @@ body {
   min-height: 341px;
 }
 
+@media (max-width: 768px) {
+  .advantages .advantages__list {
+    flex-direction: column;
+  }
+}
+
 .advantages .advantages__item {
   align-items: center;
   width: 360px;
@@ -279,8 +353,20 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .advantages .advantages__item {
+    margin: 0 0 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages .advantages__item-last {
+    margin: 0;
+  }
+}
+
 .advantages .advantages__item-text {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -288,7 +374,7 @@ body {
 }
 
 .advantages .advantages__item-heading {
-  color: #FBFBFB;
+  color: #fbfbfb;
   margin: 25px 0 16px;
   font-size: 20px;
   line-height: 24px;
@@ -305,6 +391,13 @@ body {
   justify-content: space-around;
   min-height: 448px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer .footer__content {
+    flex-direction: column;
+    padding: 60px 0 140px;
+  }
 }
 
 .footer .footer__review {
@@ -350,7 +443,7 @@ body {
 }
 
 .footer .footer__email-input {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   opacity: 0.67;
   font-size: 14px;
   line-height: 17px;
@@ -365,10 +458,10 @@ body {
 
 .footer .footer__email-button {
   text-align: center;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 14px;
   line-height: 17px;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   height: 49px;
   width: 100px;
   border-radius: 0 50px 50px 0;
@@ -388,12 +481,18 @@ body {
 }
 
 .info .info__text {
-  color: #FBFBFB;
+  color: #fbfbfb;
   padding-left: 60px;
 }
 
+@media (max-width: 768px) {
+  .info .info__media {
+    margin: 0 32px 0 0;
+  }
+}
+
 .headline {
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
   height: 148px;
   margin-bottom: 64px;
 }
@@ -402,7 +501,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
-  color: #FF6A6A;
+  color: #ff6a6a;
   padding: 59px 0 0 0;
 }
 
@@ -414,19 +513,19 @@ body {
 }
 
 .registration ::-webkit-input-placeholder {
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .registration ::-moz-placeholder {
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .registration :-moz-placeholder {
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .registration :-ms-input-placeholder {
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .registration .registration__input {
@@ -456,7 +555,7 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #9F9F9F;
+  color: #9f9f9f;
   width: 360px;
   margin-bottom: 39px;
 }
@@ -467,8 +566,8 @@ body {
   height: 50px;
   font-size: 14px;
   line-height: 17px;
-  background-color: #F16D7F;
-  color: #FBFBFB;
+  background-color: #f16d7f;
+  color: #fbfbfb;
   outline: none;
   border: 0;
   text-align: center;
