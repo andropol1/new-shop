@@ -1,5 +1,6 @@
 .header {
     background-color: $dark-blue;
+    position: relative;
 
     &__wrapper {
         display: flex;
@@ -28,10 +29,61 @@
 
         @include tablet {
             margin: 0 40px 0 18px;
-        };
+        }
     }
 
     &__person-link {
         margin: 0 34px 0 0;
     }
+
+    &__navigation {
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        top: 100%;
+        right: 0;
+        background: white;
+        display: none;
+
+        &-container {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        &-heading {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 37px 0 24px;
+        }
+
+        &-list {
+            margin: 0 0 20px;
+        }
+
+        &-li {
+            margin: 0 0 11px 20px;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration: none;
+            color: $dark-grey;
+        }
+
+        &-title {
+            color: $pink-border;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 0 0 12px;
+        }
+   
+    }
+}
+
+.display-block {
+    display: block;
 }

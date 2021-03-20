@@ -59,6 +59,10 @@
         position: absolute;
         right: -23%;
         top: 3px;
+        &:hover,
+        &:focus {
+            fill: $grey;
+        }
     }
 
     .cart__buttons {
