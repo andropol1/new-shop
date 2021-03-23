@@ -67,6 +67,11 @@
             width: 49%;
         }
 
+        @include mobile {
+            margin: 0 0 16px;
+            width: 100%;
+        }
+
         &-img {
             min-height: 420px;
             width: 100%;
@@ -99,6 +104,10 @@
         color: $grey;
         text-align: center;
         margin-bottom: 48px;
+
+        @include mobile {
+            margin-bottom: 64px;  
+        }
     }
 
     .products__button {

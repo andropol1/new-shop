@@ -72,6 +72,12 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .container {
+    width: 91%;
+  }
+}
+
 .header {
   background-color: #222222;
   position: relative;
@@ -99,6 +105,12 @@ body {
   outline: none;
 }
 
+@media (max-width: 375px) {
+  .header__button {
+    margin: 0;
+  }
+}
+
 .header__logo {
   margin: 0 40px 0 0;
 }
@@ -109,8 +121,53 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .header__logo {
+    margin: 0 40px 0 0;
+  }
+}
+
 .header__person-link {
   margin: 0 34px 0 0;
+}
+
+@media (max-width: 375px) {
+  .header__person-link {
+    display: none;
+  }
+}
+
+.header__cart {
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .header__cart {
+    display: none;
+  }
+}
+
+.header__cart::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/round.svg);
+  background-size: 19px 19px;
+  width: 19px;
+  height: 19px;
+  right: -11px;
+  top: -5px;
+  z-index: 0;
+}
+
+.header__cart::before {
+  content: '5';
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fffffff3;
+  right: -5px;
+  top: -4px;
+  z-index: 1;
 }
 
 .header__navigation {
@@ -121,6 +178,7 @@ body {
   right: 0;
   background: white;
   display: none;
+  z-index: 1;
 }
 
 .header__navigation-container {
@@ -174,15 +232,27 @@ body {
   }
 }
 
-.brand .brand__img {
+@media (max-width: 375px) {
+  .brand {
+    margin: 0 0 63px;
+  }
+}
+
+.brand__img {
   width: 50%;
   height: auto;
 }
 
 @media (max-width: 768px) {
-  .brand .brand__img {
+  .brand__img {
     width: 385px;
     height: 370px;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand__img {
+    display: none;
   }
 }
 
@@ -199,7 +269,16 @@ body {
   .brand__title {
     font-size: 44px;
     line-height: 53px;
-    font-weight: 400;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
     font-style: normal;
   }
 }
@@ -221,6 +300,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 375px) {
+  .brand__title-wrapper {
+    min-height: 363px;
+  }
+}
+
 .brand__subtitle {
   display: block;
   font-size: 37px;
@@ -232,7 +317,16 @@ body {
   .brand__subtitle {
     font-size: 24px;
     line-height: 29px;
-    font-weight: 400;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
     font-style: normal;
   }
 }
@@ -245,10 +339,22 @@ body {
   margin-bottom: 97px;
 }
 
+@media (max-width: 375px) {
+  .offers {
+    margin-bottom: 64px;
+  }
+}
+
 .offers .offers__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .offers .offers__list {
+    flex-direction: column;
+  }
 }
 
 .offers .offers__item {
@@ -266,6 +372,12 @@ body {
   .offers .offers__item {
     width: 32%;
     min-height: 168px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offers .offers__item {
+    width: 100%;
   }
 }
 
@@ -376,6 +488,13 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .products .products__item {
+    margin: 0 0 16px;
+    width: 100%;
+  }
+}
+
 .products .products__item-img {
   min-height: 420px;
   width: 100%;
@@ -407,6 +526,12 @@ body {
   color: #9f9f9f;
   text-align: center;
   margin-bottom: 48px;
+}
+
+@media (max-width: 375px) {
+  .products .products__text {
+    margin-bottom: 64px;
+  }
 }
 
 .products .products__button {
@@ -487,6 +612,18 @@ body {
   background-image: url(../img/background.png);
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 375px) {
+  .footer {
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-position: left;
+  }
 }
 
 .footer .footer__content {
@@ -583,14 +720,35 @@ body {
   min-height: 79px;
 }
 
+@media (max-width: 375px) {
+  .info .info__blocks {
+    min-height: 143px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+}
+
 .info .info__text {
   color: #fffffff3;
   padding-left: 60px;
 }
 
+@media (max-width: 375px) {
+  .info .info__text {
+    padding: 9px 0 0 0;
+  }
+}
+
 @media (max-width: 768px) {
   .info .info__media {
-    margin: 0 32px 0 0;
+    margin: 0 40px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .info .info__media {
+    margin: 0;
+    padding: 50px 0 0 0;
   }
 }
 
