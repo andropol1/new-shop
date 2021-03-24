@@ -1,5 +1,6 @@
 .header {
     background-color: $dark-blue;
+    position: relative;
 
     &__wrapper {
         display: flex;
@@ -21,6 +22,10 @@
         border: none;
         margin: 0 34px 0 0;
         outline: none;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
     &__logo {
@@ -28,10 +33,101 @@
 
         @include tablet {
             margin: 0 40px 0 18px;
-        };
+        }
+
+        @include mobile {
+            margin: 0 40px 0 0;
+        }
     }
 
     &__person-link {
         margin: 0 34px 0 0;
+
+        @include mobile {
+            display: none;
+        }
     }
+
+    &__cart {
+        position: relative;
+
+        @include mobile {
+            display: none;
+        }
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/round.svg);
+            background-size: 19px 19px;
+            width: 19px;
+            height: 19px;
+            right: -11px;
+            top: -5px;
+            z-index: 0;
+        }
+
+        &::before {
+            content: '5';
+            position: absolute;
+            font-size: 12px;
+            line-height: 14px;
+            color: $white;
+            right: -5px;
+            top: -4px;
+            z-index: 1;
+        }
+    }
+
+    &__navigation {
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        top: 100%;
+        right: 0;
+        background: white;
+        display: none;
+        z-index: 1;
+
+        &-container {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        &-heading {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 37px 0 24px;
+        }
+
+        &-list {
+            margin: 0 0 20px;
+        }
+
+        &-li {
+            margin: 0 0 11px 20px;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration: none;
+            color: $dark-grey;
+        }
+
+        &-title {
+            color: $pink-border;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 0 0 12px;
+        }
+    }
+}
+
+.display-block {
+    display: block;
 }

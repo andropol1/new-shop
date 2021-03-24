@@ -23,29 +23,73 @@
             line-height: 17px;
             color: $dark-grey;
         }
-        
+
         &-price {
             margin: 0 290px 20px 18px;
             color: $dark-pink;
         }
     }
-    
+
+    .products__overlay {
+        width: 100%;
+        min-height: 420px;
+        background: rgba(58,56,56,0.86);
+        position: absolute;
+        top: 0;
+    }
+
+    .products__hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        line-height: 17px;
+        padding: 13px 16px 13px 50px;
+        background-color: transparent;
+        color: $white;
+        outline: 1px solid $white;
+    }
+
+    .products__hover,
+    .products__overlay {
+        display: none;
+    }
+
     .products__item {
         background-color: $light-grey;
         margin: 0 0 30px;
-        width: 49%;
+        width: 32%;
         min-height: 581px;
 
         @include tablet {
             margin: 0 0 16px;
+            width: 49%;
+        }
+
+        @include mobile {
+            margin: 0 0 16px;
+            width: 100%;
         }
 
         &-img {
             min-height: 420px;
             width: 100%;
+            display: block;
+        }
+
+        &-wrapper {
+            position: relative;
+
+            &:hover .products__hover {
+                display: block;
+            }
+
+            &:hover .products__overlay {
+                display: block;
+            }
         }
     }
-    
 
     .products__heading {
         font-size: 30px;
@@ -53,15 +97,19 @@
         text-align: center;
         margin-bottom: 6px;
     }
-    
+
     .products__text {
         font-size: 14px;
         line-height: 17px;
         color: $grey;
         text-align: center;
         margin-bottom: 48px;
+
+        @include mobile {
+            margin-bottom: 64px;  
+        }
     }
-    
+
     .products__button {
         padding: 15px 39px;
         text-decoration: none;
@@ -70,8 +118,13 @@
         border: 1px solid $pink-border;
         color: $dark-pink;
         align-self: center;
+
+        &:hover,
+        &:focus {
+            background-color: $pink-border;
+            color: $white;
+            cursor: pointer;
+            outline: none;
+        }
     }
-
 }
-
-
