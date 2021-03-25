@@ -45,7 +45,7 @@
         transform: translate(-50%, -50%);
         font-size: 14px;
         line-height: 17px;
-        padding: 13px 16px 13px 50px;
+        padding: 13px 16px;
         background-color: transparent;
         color: $white;
         outline: 1px solid $white;
@@ -118,13 +118,5 @@
         border: 1px solid $pink-border;
         color: $dark-pink;
         align-self: center;
-
-        &:hover,
-        &:focus {
-            background-color: $pink-border;
-            color: $white;
-            cursor: pointer;
-            outline: none;
-        }
     }
 }
